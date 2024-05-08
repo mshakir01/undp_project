@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:undp_project/session_eleven.dart';
+import 'package:undp_project/session_ten.dart';
 import 'package:undp_project/session_ten_sec_page.dart';
 
 void main() {
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.yellow),
         useMaterial3: true,
       ),
-      home: const SessionTenSecPage(),
+      home: const SessionElevenScreen(),
     );
   }
 }
