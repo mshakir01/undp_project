@@ -192,7 +192,7 @@ class _SessionThirteenAssignementState
                 height: 56,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
-                  gradient: LinearGradient(colors: [Colors.pink, Colors.purple]),
+                  gradient: const LinearGradient(colors: [Colors.pink, Colors.purple]),
 
                 ),
                 child: const Text("Balance Withdrawal",style: mediumTextStyleWhite,),
