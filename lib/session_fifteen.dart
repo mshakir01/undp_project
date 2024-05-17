@@ -29,7 +29,7 @@ class _SessionFifteenScreenState extends State<SessionFifteenScreen> {
       body: screenList[selectedIndex],
 
 
-      
+
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.green,
         type: BottomNavigationBarType.fixed,
