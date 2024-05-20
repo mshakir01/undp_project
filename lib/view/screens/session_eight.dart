@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
 
 class SessionEight extends StatefulWidget {
   const SessionEight({super.key});
@@ -14,6 +15,7 @@ class _SessionEightState extends State<SessionEight> {
       body: Container(
         width: double.infinity,
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             // Container(
@@ -81,6 +83,15 @@ class _SessionEightState extends State<SessionEight> {
             //     ),
             //   ),
             // ),
+
+            InkWell(
+              onTap: (){
+                Get.back();
+              },
+              child: Icon(
+                Icons.arrow_back
+              ),
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

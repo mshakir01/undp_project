@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:undp_project/sesson_eighteen_second.dart';
+import 'package:undp_project/view/screens/sesson_eighteen_second.dart';
 
 class SessionEighteen extends StatefulWidget {
   const SessionEighteen({super.key});
@@ -59,7 +59,7 @@ class _SessionEighteenState extends State<SessionEighteen> {
               onTap: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (_) => const SessionEighteenSecond()));
-              
+
                 },
               child: Padding(
                 padding: const EdgeInsets.only(left: 24.0, right: 24, top: 32),

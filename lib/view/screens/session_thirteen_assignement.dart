@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:gradient_borders/box_borders/gradient_box_border.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
 
-import 'constant/const_color.dart';
-import 'constant/const_style.dart';
+import '../../constant/const_color.dart';
+import '../../constant/const_style.dart';
+
 
 class SessionThirteenAssignement extends StatefulWidget {
   const SessionThirteenAssignement({super.key});
@@ -28,12 +29,12 @@ class _SessionThirteenAssignementState
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Row(
+              Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Icon(
                   Icons.arrow_back,
-                  color: whiteColor,
+                  color: redColor.value,
                   size: 24,
                 ),
                 Text(
@@ -70,7 +71,7 @@ class _SessionThirteenAssignementState
                             Colors.pink,
                           ],
                         ),
-                        const Text(
+                          Text(
                           "Current Balance",
                           style: mediumTextStyle
                         )
@@ -84,7 +85,7 @@ class _SessionThirteenAssignementState
                 ),
               ),
             ),
-            const Padding(
+              Padding(
               padding: EdgeInsets.only(top: 24.0,bottom: 24),
               child: Text(
                 "Withdrawing Method",
@@ -95,14 +96,14 @@ class _SessionThirteenAssignementState
             Container(
               height: 56,
               decoration: BoxDecoration(
-                border: Border.all(color: greyColor.withOpacity(.7)),
+                border: Border.all(color: redColor.value.withOpacity(.7)),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: RadioListTile(
                 title:   Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Text("Direct Transfer",style:mediumTextStyle,),
+                      Text("Direct Transfer",style:mediumTextStyle,),
                     Image.asset("assets/images/ApplePay.png",width: 40,height: 40,)
                   ],
                 ),
@@ -117,19 +118,18 @@ class _SessionThirteenAssignementState
             Container(
               height: 56,
               decoration: BoxDecoration(
-                border: Border.all(color: greyColor.withOpacity(.7)),
+                border: Border.all(color: redColor.value.withOpacity(.7)),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: RadioListTile(
                 title:   Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Text("Direct Transfer",style:mediumTextStyle,),
+                      Text("Direct Transfer",style:mediumTextStyle,),
                     Image.asset("assets/images/visa-logo.png",width: 40,height: 40,)
                   ],
                 ),
                 value: "Option 2", groupValue: isRadioChange, onChanged: (newVal){
-
                   setState(() {
                     isRadioChange=newVal!;
                   });
@@ -140,19 +140,18 @@ class _SessionThirteenAssignementState
             Container(
               height: 56,
               decoration: BoxDecoration(
-                border: Border.all(color:greyColor.withOpacity(.7)),
+                border: Border.all(color:redColor.value.withOpacity(.7)),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: RadioListTile(
                 title:   Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Text("Direct Transfer",style: mediumTextStyle,),
+                      Text("Direct Transfer",style: mediumTextStyle,),
                    Image.asset("assets/images/Shop Pay.png",width: 40,height: 40,),
                   ],
                 ),
                 value: "Option 3", groupValue: isRadioChange, onChanged: (newVal){
-
                   setState(() {
                     isRadioChange=newVal!;
                   });
@@ -172,10 +171,10 @@ class _SessionThirteenAssignementState
                     ),
                     borderRadius: BorderRadius.circular(12)
                 ),
-                child: const Row(
+                child:   Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.add_box_outlined,color: whiteColor,size: 32,),
+                    Icon(Icons.add_box_outlined,color: redColor.value,size: 32,),
                     SizedBox(width: 16,),
                     Text("Add New Withdrawal Method",style: mediumTextStyleWhite,)
                   ],
@@ -192,10 +191,10 @@ class _SessionThirteenAssignementState
                 height: 56,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
-                  gradient: const LinearGradient(colors: [Colors.pink, Colors.purple]),
+                  gradient:   LinearGradient(colors: [Colors.pink, Colors.purple]),
 
                 ),
-                child: const Text("Balance Withdrawal",style: mediumTextStyleWhite,),
+                child:   Text("Balance Withdrawal",style: mediumTextStyleWhite,),
               ),
             )
 

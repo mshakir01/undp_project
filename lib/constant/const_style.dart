@@ -9,5 +9,11 @@ import 'const_color.dart';
     fontWeight: FontWeight.bold,
     color: Colors.white);
 
- const mediumTextStyle= TextStyle(color: greyColor,fontSize: 16);
- const mediumTextStyleWhite= TextStyle(color: whiteColor,fontSize: 16);
+
+
+  final mediumTextStyle= TextStyle(color: redColor.value,fontSize: 16);
+  final mediumTextStyleWhite= TextStyle(color: redColor.value,fontSize: 16);
+
+
+
+ const buttonStyle=TextStyle(fontStyle: FontStyle.italic,fontSize: 24,color: Colors.white);
